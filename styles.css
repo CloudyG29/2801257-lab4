@@ -1,11 +1,22 @@
 .spinner {
     /* Your styling */
-    animation: spin 1s linear infinite; /* Required */
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ddd;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  margin: 50px auto;
+  animation: spin 1s linear infinite; /* Required */
+  display: none;
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+.country-card{
+    background-color: rgb(217, 252, 240);
+    padding: 20px;
 }
 
 .border-grid {
@@ -13,7 +24,7 @@
     /* Additional layout properties */
 }
 .error {
-    color: /* error color */;
+    background-color: red/* error color */;
     /* Additional styling */
 }
 .hidden {
