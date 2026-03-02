@@ -4,7 +4,7 @@ async function searchCountry(countryName) {
         const spinner = document.getElementById("loading-spinner");
         spinner.classList.remove("hidden");
         // Fetch country data
-        const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
+        const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`);
         const data = await response.json();
         const country = data[0];
 
